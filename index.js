@@ -4,6 +4,15 @@ const MIN_MINUTES = 1;
 const MAX_MINUTES = 60;
 
 const timeDisplay = document.getElementById("timeDisplay");
+const currentTimeDisplay = document.getElementById("currentTime");
+
+function updateCurrentTime() {
+  const now = new Date();
+  currentTimeDisplay.textContent = now.toLocaleTimeString("ko-KR");
+}
+
+updateCurrentTime();
+setInterval(updateCurrentTime, 1000);
 
 function getConfiguredMinutes() {
   const savedMinutes = Number(localStorage.getItem(STORAGE_KEY));
