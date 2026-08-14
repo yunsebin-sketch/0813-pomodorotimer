@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdf3ef;
+  font-family: "Segoe UI", "Apple SD Gothic Neo", sans-serif;
+}
+
+.setting-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 48px 56px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  min-width: 320px;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #e05a4e;
+  letter-spacing: 1px;
+}
+
+.setting-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+}
+
+.setting-field label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555555;
+}
+
+.setting-field input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 18px;
+  border: 1px solid #dddddd;
+  border-radius: 12px;
+  outline: none;
+}
+
+.setting-field input:focus {
+  border-color: #e05a4e;
+}
+
+.btn {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  width: 100%;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-confirm {
+  background-color: #e05a4e;
+  color: #ffffff;
+}
